@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import Input from "@/components/form/Input";
 import PasswordInput from "@/components/form/PasswordInput";
 import CheckBox from "@/components/form/CheckBox";
-
 const LogInForm = () => {
   const router = useRouter();
 
