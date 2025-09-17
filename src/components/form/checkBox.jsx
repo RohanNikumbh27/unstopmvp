@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import "./formcomponents.css";
 
-export default function Checkbox({
+export default function CheckBox({
   id,
   label,
   checked,

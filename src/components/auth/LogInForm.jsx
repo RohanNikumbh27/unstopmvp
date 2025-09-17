@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Input from "@/components/form/Input";
 import PasswordInput from "@/components/form/PasswordInput";
-import Checkbox from "@/components/form/CheckBox";
+import CheckBox from "@/components/form/CheckBox";
 
 const LogInForm = () => {
   const router = useRouter();
@@ -112,7 +112,7 @@ const LogInForm = () => {
         />
 
         <div className="flex justify-between items-center py-2">
-          <Checkbox
+          <CheckBox
             id="rememberMe"
             label="Remember Me"
             checked={rememberMe}
