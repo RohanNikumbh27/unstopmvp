@@ -113,14 +113,12 @@ const LogInForm = () => {
         />
 
         <div className="flex justify-between items-center py-2">
-          {/* <CheckBox
+          <CheckBox2
             id="rememberMe"
             label="Remember Me"
             checked={rememberMe}
             onChange={(e) => setRememberMe(e.target.checked)}
-          /> */}
-
-          <CheckBox2 />
+          />
           <a
             href="#"
             className="text-[16px] text-primary font-[400] hover:underline"
