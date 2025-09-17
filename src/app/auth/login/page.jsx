@@ -9,12 +9,12 @@ export const metadata = {
 
 export default function Login() {
   return (
-    <div className="bg-[#F4F4F4] h-screen flex">
-      <div className="h-svh w-[50%] justify-center items-center hidden md:flex">
+    <div className="bg-[#F4F4F4] h-svh flex">
+      <div className="h-svh w-[50%] p-[2rem] justify-center items-center hidden md:flex">
         <HeroImage />
       </div>
-      <div className="h-svh w-[100%]  md:w-[50%] flex justify-center items-center">
-        <div className="bg-[#FFFFFF] flex flex-col w-[95%] md:w-[95%] h-[90%] overflow-scroll rounded-[20px] font-[500] py-[30px] px-[35px] border-[1px] gap-6 border-[#E2E2E2] justify-between">
+      <div className=" w-[100%] md:w-[50%] flex justify-between items-center">
+        <div className="bg-[#FFFFFF] flex flex-col w-[100%] justify-evenly md:w-[95%] h-svh max-h-[800px] max-w-[949px] md:h-[92%] overflow-scroll md:rounded-[20px] font-[500] pt-[25px] pb-[20px] px-[35px] md:border-[1px] gap-[0.5rem] border-[#E2E2E2] ">
           <span className="heading-text">
             Welcome to <br />
             <span className="text-[#6358DC] unstop">Unstop</span>
@@ -23,7 +23,7 @@ export default function Login() {
             <Button2 title="Login with Google" imgsrc={"/googleicon.svg"} />
             <Button2 title="Login with Facebook" imgsrc={"/facebookicon.svg"} />
           </div>
-          <div className="flex items-center w-full">
+          <div className="flex items-center w-full ">
             <hr className="flex-grow border-t border-gray-300" />
             <span className="mx-4 text-gray-600 tracking-widest font-[400] text-[16px]">
               OR
@@ -34,8 +34,6 @@ export default function Login() {
             <LogInForm />
           </div>
         </div>
-
-        <div></div>
       </div>
     </div>
   );

@@ -22,8 +22,8 @@ export default function CheckBox2({
             checked={checked}
             onChange={onChange}
             disabled={disabled}
-            className={`peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border-2
-              ${error ? "border-red-500" : "border-primary"}
+            className={`peer h-5 w-5 cursor-pointer transition-all appearance-none rounded-[4px] border-1
+              ${error ? "border-red-500" : "border-[#D9D9D9] bg-[#E2E2E2]"}
               ${error ? "checked:border-red-500" : "checked:border-primary"}
               checked:bg-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-50`}
             aria-invalid={!!error}
@@ -34,7 +34,7 @@ export default function CheckBox2({
         </div>
 
         {label && (
-          <label htmlFor={id} className="ml-2 text-sm text-gray-700 cursor-pointer select-none">
+          <label htmlFor={id} className="ml-2 text-[16px] font-[400] text-gray-700 cursor-pointer select-none">
             {label}
           </label>
         )}
