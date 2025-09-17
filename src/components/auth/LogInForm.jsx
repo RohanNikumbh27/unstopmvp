@@ -106,8 +106,6 @@ const LogInForm = () => {
           <a
             href="#"
             className="text-[16px] text-primary font-[400] hover:underline"
-            Expand
-            Down
           >
             Forgot Password?
           </a>
