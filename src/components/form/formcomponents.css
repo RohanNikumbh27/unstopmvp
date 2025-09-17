@@ -1,0 +1,81 @@
+.inputContainer {
+  position: relative;
+  background: #f7f7f7;
+  border-radius: 16px;
+  padding: 1.5rem 1rem 0.5rem 3rem;
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+}
+
+.floatingInput {
+  width: 100%;
+  padding-right: 3rem;
+  padding-left: 0;
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #181818;
+  z-index: 1;
+}
+
+.floatingLabel {
+  position: absolute;
+  left: 3rem;
+  top: 1.3rem;
+  font-size: 1rem;
+  color: #232323;
+  padding: 0 0.1rem;
+  pointer-events: none;
+  transition: 0.15s cubic-bezier(0.4,0,0.2,1);
+}
+
+.floatingInput:focus + .floatingLabel,
+.floatingInput:not(:placeholder-shown) + .floatingLabel {
+  top: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #1C1B1F;
+}
+
+.leftIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #181818;
+  z-index: 2;
+}
+
+.rightIcon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #181818;
+  cursor: pointer;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer.error {
+  /* box-shadow: 0 0 10px  #ef44442a; */
+  border: 1px solid #ef4444a6;
+}
+
+.inputContainer.error  {
+  color: #b91c1c;
+}
+
+
+.inputError {
+  margin-top: 6px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #dc2626;
+}
