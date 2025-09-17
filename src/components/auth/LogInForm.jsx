@@ -1,9 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import CheckBox from "@/components/form/CheckBox";
 import Input from "@/components/form/Input";
 import PasswordInput from "@/components/form/PasswordInput";
-import CheckBox from "@/components/form/CheckBox";
 const LogInForm = () => {
   const router = useRouter();
 
