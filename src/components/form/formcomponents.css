@@ -5,7 +5,7 @@
   padding: 1.5rem 1rem 0.5rem 3rem;
   display: flex;
   align-items: center;
-  min-height: 4rem;
+  min-height: 3.5rem;
 }
 
 .floatingInput {
@@ -23,7 +23,7 @@
 .floatingLabel {
   position: absolute;
   left: 3rem;
-  top: 1.3rem;
+  top: 1rem;
   font-size: 1rem;
   color: #232323;
   padding: 0 0.1rem;

@@ -96,7 +96,7 @@ const LogInForm = () => {
           errorKey="password"
         />
 
-        <div className="flex justify-between items-center py-2">
+        <div className="flex justify-between items-center py-[0.4rem]">
           <CheckBox2
             id="rememberMe"
             label="Remember Me"
@@ -113,12 +113,12 @@ const LogInForm = () => {
         {errors.api && (
           <p className="text-sm text-red-600 text-center">{errors.api}</p>
         )}
-        <button type="submit" className="primary-btn py-[1.2rem]">
+        <button type="submit" className="primary-btn h-[3.5rem] py-[1.1rem] ">
           Login
         </button>
       </form>
-      <p className="mt-6 text-center text-[16px] text-gray-600 font-[400]">
-        New user?{" "}
+      <p className="mt-4 text-center text-[16px] text-gray-600 font-[400]">
+        Don’t have an account?{" "}
         <a href="#" className="text-primary  hover:underline">
           Register
         </a>
