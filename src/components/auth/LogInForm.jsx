@@ -1,9 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import CheckBox from "@/components/form/CheckBox.jsx";
+// import CheckBox from "@/components/form/CheckBox.jsx";
 import Input from "@/components/form/Input";
 import PasswordInput from "@/components/form/PasswordInput";
+import CheckBox2 from "@/components/form/CheckBox2";
+
 const LogInForm = () => {
   const router = useRouter();
 
@@ -111,13 +113,14 @@ const LogInForm = () => {
         />
 
         <div className="flex justify-between items-center py-2">
-          <CheckBox
+          {/* <CheckBox
             id="rememberMe"
             label="Remember Me"
             checked={rememberMe}
             onChange={(e) => setRememberMe(e.target.checked)}
-          />
+          /> */}
 
+          <CheckBox2 />
           <a
             href="#"
             className="text-[16px] text-primary font-[400] hover:underline"
