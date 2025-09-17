@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import "./formcomponents.css";
 import Image from "next/image";
 
 export default function PasswordInput({

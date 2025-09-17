@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import "./formcomponents.css";
 
 export default function CheckBox({
   id,
